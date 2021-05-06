@@ -2,6 +2,7 @@
      <div class="container">
           <img class="logo" src="../../icons/logo.svg" alt="" />
           <img class="logo_title" src="../../icons/logo_title.svg" alt="" />
+          <p>Exhibition, MarketPlace, Profile/Login</p>
      </div>
 </template>
 
