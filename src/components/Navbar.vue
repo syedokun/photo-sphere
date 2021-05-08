@@ -1,8 +1,19 @@
 <template>
      <div class="container">
-          <img class="logo" src="../../icons/logo.svg" alt="" />
-          <img class="logo_title" src="../../icons/logo_title.svg" alt="" />
-          <p>Exhibition, MarketPlace, Profile/Login</p>
+          <div class="logo">
+               <img class="icon" src="../../icons/logo-final.svg" alt="" />
+          </div>
+          <div class="navigation">
+               <div class="vertical">
+                    <a href="">Exhibition</a>
+               </div>
+               <div class="vertical">
+                    <a href="">MarketPlace</a>
+               </div>
+               <div class="vertical">
+                    <a href="">Profile/Login</a>
+               </div>
+          </div>
      </div>
 </template>
 
@@ -19,18 +30,28 @@ export default {
 <style scoped>
 .container {
      background-color: #6eb4ac80;
+     display: flex;
+     justify-content: space-between;
+     padding: 5px;
 }
 
-.logo {
-     width: 50px;
-     display: inline-block;
+.icon {
+     width: 280px;
 }
 
-.logo_title {
-     padding-left: 15px;
-     padding-bottom: 1%;
-     width: 170px;
-     display: inline-block;
-     padding-bottom: 15px;
+.navigation {
+     display: flex;
+     justify-content: space-between;
+}
+
+.vertical {
+     border-right: 1px solid rgba(0, 0, 0, 0.3);
+     height: 12px;
+     padding: 20px 15px;
+}
+
+a {
+     color: rgba(255, 255, 255, 0.95);
+     text-decoration: none;
 }
 </style>
